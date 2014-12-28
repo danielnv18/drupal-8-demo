@@ -1,7 +1,7 @@
 demo.demo:
-  path: '/demo'
+  path: 'demo'
   defaults:
-    _content: '\Drupal\demo\Controller\DemoController::demo'
+    _controller: '\Drupal\demo\Controller\DemoController::demo'
     _title: 'My first page in D8'
   requirements:
     _permission: 'access content'

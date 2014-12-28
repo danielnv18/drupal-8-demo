@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Contains \Drupal\example\Controller\ExampleController.
+ * Contains \Drupal\demo\Controller\ExampleController.
  */
 
 namespace Drupal\demo\Controller;
