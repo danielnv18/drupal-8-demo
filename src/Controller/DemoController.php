@@ -1,21 +1,30 @@
 <?php
 /**
  * @file
- * Contains \Drupal\demo\Controller\DemoController.
+ * Contains \Drupal\example\Controller\ExampleController.
  */
 
 namespace Drupal\demo\Controller;
 
+use Drupal\Core\Controller\ControllerBase;
+
 /**
- * DemoController.
+ * Provides route responses for the Example module.
  */
-class DemoController {
+class DemoController extends ControllerBase {
+
   /**
-   * Generates an example page.
+   * Returns a simple page.
+   *
+   * @return array
+   *   A simple renderable array.
    */
   public function demo() {
-    return array(
-      '#markup' => t('Hello World!'),
+    $element = array(
+      '#type' => 'markup',
+      '#markup' => 'Hello, world',
     );
+    return $element;
   }
+
 }
