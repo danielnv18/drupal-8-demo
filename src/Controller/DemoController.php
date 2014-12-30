@@ -19,12 +19,10 @@ class DemoController extends ControllerBase {
    * @return array
    *   A simple renderable array.
    */
-  public function demo() {
-    $element = array(
+  public function demo($name = 'World') {
+    return [
       '#type' => 'markup',
-      '#markup' => 'Hello, world',
-    );
-    return $element;
+      '#markup' => $this->t('Hello @name!', ['@name' => $name])
+    ];
   }
-
 }
