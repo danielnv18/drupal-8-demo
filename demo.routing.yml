@@ -13,3 +13,12 @@ demo.world:
     _title: 'My first page in D8'
   requirements:
     _permission: 'access content'
+
+demo.admin_form:
+  path: 'admin/config/demo/settings'
+  defaults:
+    _form: '\Drupal\demo\Form\AdminForm'
+    _title: 'demo AdminForm Form'
+  requirements:
+    _permission: 'access administration pages'
+
